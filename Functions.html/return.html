@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Return Statement</title>
+</head>
+<body>
+  <script>
+    // function generateRandomMove() {
+    //    let random = Math.random();
+    //    let randomMove = random * 3;
+    //    return randomMove; 
+    // }
+
+    // console.log(generateRandomMove());
+    // console.log(generateRandomMove());
+    // console.log(generateRandomMove());
+    // console.log(generateRandomMove());
+    // console.log(generateRandomMove());
+
+    function determineDriveStatus() {
+      let age = 21;
+      if (age === undefined) {
+        return 'Aap avatar hain';
+      }
+      console.log('Checking drive status');
+
+      // let status;
+      if (age > 18) {
+        return 'You can drive';
+      } else {
+        return 'Use a Bicycle';
+      }
+    }
+
+    console.log(determineDriveStatus());
+
+  </script>
+</body>
+</html>

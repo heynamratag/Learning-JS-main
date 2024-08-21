@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="Myntra Bag.css">
+  <title>Myntra Bag</title>
+</head>
+<body>
+  <!--shorthand operation means cartQuantity = cartQuantity + 1 or cartQuantity ++-->
+    <button class="bag-button" onclick="cartQuantity += 1; document.querySelector('#cart-summary'). innerText=`Your bag has ${cartQuantity} items`;">Add to Bag</button>
+    <!--shorthand operation means cartQuantity = cartQuantity - 1 or cartQuantity -- can be used.-->
+    <button class="wish-button" onclick="cartQuantity -= 1; document.querySelector('#cart-summary'). innerText=`Your bag has ${cartQuantity} items`;"> Move to Wishlist</button>
+    <!--shorthand operation means cartQuantity = cartQuantity + 2.-->
+    <button class="bag-button" onclick="cartQuantity += 2; document.querySelector('#cart-summary'). innerText=`Your bag has ${cartQuantity} items`;">Add 1+1 Sale Item</button> 
+    
+    <h1 id="cart-summary"> </h1>
+
+    <script>
+      let cartQuantity = 0;
+      document.querySelector('#cart-summary'). innerText=`Your bag has ${cartQuantity} items`;
+
+    </script>
+</body>
+</html>

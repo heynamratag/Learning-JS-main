@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boolean </title>
+</head>
+<body>
+  <script>
+    console.log(5 < 6);
+    console.log(typeof(5 < 8));
+    console.log('true');
+    console.log(typeof('true'));
+    console.log(typeof true);
+
+    //Comparision Operators.
+    console.log(6 == 6);
+    console.log(2 == 4);
+
+    console.log(5 == 5.0);
+    console.log(5 == 5);
+
+    console.log(5 === 5.0);
+    console.log(5 === 5);
+
+    console.log(5 == '5.0');
+    console.log(5 == '5');
+    // double equals to ('==') tries to do explicite conversion so that equality should be maintained. As it's compairing number and string so it will either convert it into number or string and then provides result/output.
+
+    console.log(5 === '5.0');
+    console.log(5 === '5');
+    //triple equals to ('===') it does not perform any conversion, checks the data as is. Value should exactly be same and then it will provide results.
+
+    //Order of comparision operators is less that arithmetic operators.
+  </script>
+</body>
+</html>
