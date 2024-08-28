@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Objects</title>
+</head>
+<body>
+  <script>
+    let product = {
+      company: 'Westside',
+      price: 1299,
+      item_name: 'Kurta Set',
+    };
+      console.log(product);
+    // below method is called as dot notation.
+      console.log(product.company);
+    // console.log(product.item_name);
+    // console.log(product.price);
+    // product.company = 'Pantaloons';
+    // console.log(product);
+
+    // Bracket notation method, is generally used because we don't know what type of property will be used throughout the program, it helpful when the property has any hypen before it.
+    // console.log(product ['company']);
+    // console.log(product ['item_name']);
+    // console.log(product['price']);
+
+    let propertyName = 'item-name';
+    console.log(product.propertyName);
+    // console.log(product.item_name);
+    // console.log(product.price);
+
+    delete product['company'];
+    console.log(product);
+
+  </script>
+</body>
+</html>
