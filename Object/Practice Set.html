@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Practice Exercise</title>
+</head>
+<body>
+  <script>
+    let product = {
+      brand: 'Aurelia',
+      size: 'M',
+      price: 899,
+      colour: 'Red',
+      fit: 'Regular',
+      fabricQuality: 'Cotton', 
+      'delivery-time': 'Within 2 days delivery',
+    };
+
+    // let newProduct = product;
+    // console.log(product);
+    // newProduct.size = 'L';
+    // console.log(product);
+    // newProduct.fit = 'Slim Fit';
+    // console.log(product);
+
+    console.log(product['delivery-time']);
+
+    let obj = {
+      message: 'Good Job',
+      status: 'Complete',
+    };
+    
+    console.log(obj);
+
+    let { message, status } = obj;
+    console.log(message);
+    console.log(status);
+
+    function isIdenticalProduct(product1, product2) {
+      if (typeof product1 !== 'object'|| typeof product2 !== 'object') {
+        console.warn('Parameter passed was not an object');
+        return false;
+      }
+
+      if (product1 == product2) {
+        return true;
+      }
+      
+      if (product1.brand === product2.brand &&
+          product1.size === product2.size &&
+          product1.colour === product2.colour &&
+          product1.fit === product2.fit &&
+          product1.price === product2.price &&
+          product1.fabricQuality === product2.fabricQuality
+        ) {
+        return true;     
+         } else {
+        return false;
+      }
+    }
+
+    let product2 = {
+      brand: 'Aurelia',
+      size: 'L',
+      price: 899,
+      colour: 'Red',
+      fit: 'Regular',
+      fabricQuality: 'Cotton', 
+      'delivery-time': 'Within 2 days delivery',
+    };
+
+    let product3 = {
+      brand: 'Aurelia',
+      size: 'L',
+      price: 899,
+      colour: 'Red',
+      fit: 'Regular',
+      fabricQuality: 'Cotton', 
+      'delivery-time': 'Within 2 days delivery',
+    };
+
+    console.log(isIdenticalProduct(product, ''));
+    console.log(isIdenticalProduct(product, product));
+    console.log(isIdenticalProduct(product, product2));
+    console.log(isIdenticalProduct(product3, product2));
+    console.log(isIdenticalProduct(product2, product3))
+
+  </script>
+</body>
+</html>

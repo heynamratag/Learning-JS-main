@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Object Shortcuts</title>
+</head>
+<body>
+   <script>
+    // let price = 1299;
+    // let product = {
+    //   company: 'Westside',
+    //   price: price,
+    //   itemName: 'Kurta Set',
+    // };
+
+    // Destructuring (extract properties from objects easily) used heavily in industry/companies.
+    // let { itemName } = product;
+    // console.log(itemName);
+    // we can extract more than one property at once.
+    // let { price, company } = product;
+    // console.log(price, company);
+
+    // Property Shorthand (not recommended )
+      // product = {
+      // company: 'Mango',
+      // itemName: 'Kurta Set',
+      // price 
+      // {price:price} simplifies to just price.
+    // };
+
+    // Method Shorthand (not recommended)
+    let product = {
+      company: 'Westside',
+      itemName: 'Kurta Set',
+      displayPrice: function() {
+        return `$${this.price.tofixed(2)}`;
+      }
+    };
+
+    // could be written as (define methods directly inside the object without the function keyword)
+      product = {
+      company: 'Westside',
+      itemName: 'Kurta Set',
+      displayPrice() {
+        return `$${this.price.tofixed(2)}`;
+      }
+    };
+
+
+    
+   </script>
+</body>
+</html>
